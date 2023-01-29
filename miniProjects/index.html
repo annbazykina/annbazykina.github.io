@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/millioner.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/generator.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mini-Projects</title>
+</head>
+<body>
+    
+<div class="container">
+
+    <div class="main-buttons">
+        <button class="main-buttons-item">Відкрий Millioner</button>
+        <button class="main-buttons-item">Відкрий Calculator</button>
+        <button class="main-buttons-item">Відкрий Generator </button>
+    </div>
+
+    
+            <!-- millioner -->
+            <div class="container-for-millioner hide-project project">
+                <h1 class="animated-header">Ти хочешь виграти 1 000 000?</h1>
+                <button id="start" class="btn-start-millioner">Давай спробуємо!</button>
+                
+                <div class="container-millioner hidden">
+                    <div class="container-questions">
+                        <div class="info-window">
+                        </div>
+                        <div id="score">
+                            Score: <span id="correct-score">1</span> / <span id="complete-answer">15</span>
+                        </div>
+                        <div class="millioner-help">
+                            <div class="time">
+                            
+                            </div>
+                            <div id="hints">
+                                <button id="fifty" style="width:40px">50</button>
+                                <button id="callFriend" style="width:40px"><i class="fa fa-duotone fa-mobile"></i></button>
+                                
+                            </div>
+                        </div>
+                    
+                        <div id="question-wrapper">
+                            <div id="question"></div>
+                            <div id="answers-button">
+                                <button name="a" value="a" class="btn-millioner"></button>
+                                <button name="b" value="b" class="btn-millioner"></button>
+                                <button name="c" value="c" class="btn-millioner"></button>
+                                <button name="d" value="d" class="btn-millioner"></button>
+                            </div>
+                            <div id="explanation" class="hidden"></div>
+                        </div>
+                        
+                        <button id="next-question" name="next-question" class="hidden">Наступне запитання</button>
+                    </div>
+                    
+                    <div class="container-money">
+                        <div id="sums">
+                            <div class="" value="100">100</div>
+                            <div class="">200</div>
+                            <div class="">300</div>
+                            <div class="">500</div>
+                            <div class="">1000</div>
+    
+                            <div class="">5 000</div>
+                            <div class="">10 000</div>
+                            <div class="">15 000</div>
+                            <div class="">25 000</div>
+                            <div class="">50 000</div>
+    
+                            <div class="">100 000</div>
+                            <div class="">200 000</div>
+                            <div class="">300 000</div>
+                            <div class="">500 000</div>
+                            <div class="" value="1 000 000">1 000 000</div>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="btn-back">
+                    <button class="main-buttons-back main-buttons-item">Повернутися назад</button>
+                </div>
+            </div>
+
+
+
+    <!-- calculator -->
+    <div class="container-calculator hide-project project">
+        <div class="calculator-screen">
+            <p class="screen">0</p>
+        </div>
+        <div class="calculator-buttons">
+            
+            <button name="ac" value="c" class="btn-calculator ac grey-bg clear" >C</button>
+            <button name="plus-minus" value="plus-minus" class="btn-calculator grey-bg operators">+/-</button>
+            <button name="percent" value="%" class="btn-calculator grey-bg operators">%</button>
+            <button name="divide" value="/" class="btn-calculator orange-bg operators">/</button>
+
+            <button name="nine" value="7" class="btn-calculator numbers">7</button>
+            <button name="nine" value="8" class="btn-calculator numbers">8</button>
+            <button name="nine" value="9" class="btn-calculator numbers">9</button>
+            <button name="multiply" value="X" class="btn-calculator orange-bg operators">X</button>
+
+            <button name="four" value="4" class="btn-calculator numbers">4</button>
+            <button name="five" value="5" class="btn-calculator numbers">5</button>
+            <button name="six" value="6" class="btn-calculator numbers">6</button>
+            <button name="minus" value="-" class="btn-calculator orange-bg operators">-</button>
+
+            <button name="one" value="1" class="btn-calculator numbers">1</button>
+            <button name="two" value="2" class="btn-calculator numbers">2</button>
+            <button name="three" value="3" class="btn-calculator numbers">3</button>
+            <button name="plus" value="+" class="btn-calculator orange-bg operators">+</button>
+
+            <button name="zero" value="0" class="btn-calculator numbers zero">0</button>
+            <button name="comma" value="." class="btn-calculator operators">,</button>
+            <button name="equel" value="=" class="btn-calculator orange-bg equal">=</button>
+
+
+        </div>
+        <div class="btn-back">
+            <button class="main-buttons-back main-buttons-item">Повернутися назад</button>
+        </div>
+    </div>
+
+
+
+    <!-- generator -->
+    <div class="container-for-generator hide-project project">
+            
+        <div class="container-generator">
+            <h1>Random Number Generator</h1>
+            <form class="form-generator">
+                <label for="min">Min:</label>
+                <input type="number" id="min" name="fmin" required>
+                <label for="max">Max:</label>
+                <input type="number" id="max" name="fmax" required>
+                <label for="count">Count:</label>
+                <input type="number" id="count" name="fcount" required>
+                <label for="checkbox">Generate uniq numbers:</label>
+                <input type="checkbox" id="checkbox" value="uniq">
+               
+                <button type="button" class="btn-generator">Generate</button>
+                
+                <p class="generator-result">Result:</p>
+                <p class="generator-random-num"></p> 
+            </form> 
+        </div>
+        <div class="btn-back">
+            <button class="main-buttons-back main-buttons-item">Повернутися назад</button>
+        </div>
+        
+    </div>    
+
+    
+        
+
+</div>
+
+
+
+
+
+
+    <script src="millioner.js"></script>
+    <script src="calculator.js"></script>
+    <script src="generator.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
